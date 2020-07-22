@@ -11,6 +11,8 @@ import java.awt.Font;
 import javax.swing.JComboBox;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.JButton;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class FrameTipoQuerySingolo extends JFrame {
 
@@ -39,6 +41,14 @@ public class FrameTipoQuerySingolo extends JFrame {
 		riempiBoxSelezione(comboBoxPrimaSelezione);
 		
 		JButton btnQuery1 = new JButton("Query 1");
+		btnQuery1.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+			
+				Query query = new Query();
+				query.queryEsempio();
+				
+			}
+		});
 		
 		JButton btnQuery2 = new JButton("Query 2");
 		

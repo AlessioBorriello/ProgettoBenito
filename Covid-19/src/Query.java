@@ -5,9 +5,9 @@ import java.time.LocalDateTime;
 
 public class Query {
 	
-	String URL = "jdbc:mysql://localhost:3306/progetto?autoReconnect=true&useSSL=false"; //URL del database
-	String PASSWORD = "password";
-	String UTENTE = "root";
+	String URL = "jdbc:oracle:thin:@192.168.1.101:444:BEN"; //URL del database
+	String PASSWORD = "333Benito375";
+	String UTENTE = "BEN";
 	
 	private int attributo;
 	
