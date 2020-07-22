@@ -45,7 +45,8 @@ public class FrameTipoQuerySingolo extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 			
 				Query query = new Query();
-				query.queryEsempio();
+				
+				System.out.println(query.queryEsempio());
 				
 			}
 		});
